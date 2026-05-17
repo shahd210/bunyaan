@@ -25,12 +25,12 @@ function Dashboard() {
 <Route path="add" element={<FormDashboard/>} />
 </Route>
 
-<Route path="/projects" element={<Projects/>} >
+<Route path="/projects" element={<Projects  sethasNotification={sethasNotification}/>} >
  <Route index element={<TableDashboard  name = "Projects" add="Project"/>} />
  <Route path="add" element={<FormDashboard/>} />
 </Route>
 
-<Route path="/developer" element={<Developer />} >
+<Route path="/developer" element={<Developer  sethasNotification={sethasNotification} />} >
 <Route index element={<TableDashboard name="Developers" add="Developer"/>} />
 <Route path="add" element={<FormDashboard/>} />
 </Route>

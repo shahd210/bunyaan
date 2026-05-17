@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom"
 
-function Developer (){
+function Developer ({sethasNotification}){
     return(
         <>
         <section className="py-4">
 
-          <Outlet/>      
+          <Outlet context={{sethasNotification}}/>      
         </section>
     
         </>

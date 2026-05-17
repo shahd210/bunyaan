@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 //import TableDashboard from "../components/Ui/TableDashboard/TableDashboard";
 
-function Projects (){
+function Projects ({sethasNotification}){
     return(
         <>
         <section className="py-4">
-           <Outlet />  
+           <Outlet context={{sethasNotification}}/>  
         </section>
        
         </>
